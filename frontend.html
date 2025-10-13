@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gym Management System</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat-Bold", sans-serif;
+        }
+
+        p {
+            color: #8f8f8f;
+        }
+
+        /* Headings */
+        .big-heading {
+            font-family: "Montserrat-Black", sans-serif;
+            font-size: 3.5rem;
+            line-height: 1.5;
+        }
+
+        .section-heading {
+            font-size: 3rem;
+            line-height: 1.5;
+        }
+
+        /* Containers */
+        .container-fluid {
+            padding: 7% 15%;
+        }
+
+        /* Sections */
+        .colored-section {
+            background-color: rgb(0, 118, 220);
+            color: #fff;
+        }
+
+        .white-section {
+            background-color: #fff;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            padding: 0 0 4.5rem;
+        }
+
+        .navbar-brand {
+            font-family: "Ubuntu", sans-serif;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .nav-item {
+            padding: 0 18px;
+        }
+
+        .nav-link {
+            font-size: 1.2rem;
+            font-family: "Montserrat-Light", sans-serif;
+        }
+
+        /* Buttons */
+        .download-button {
+            margin: 5% 3% 5% 0;
+        }
+
+        /* Title Section */
+        #title {
+            background-color: rgb(0, 118, 220);
+            color: #fff;
+            text-align: left;
+        }
+
+        #title .container-fluid {
+            padding: 3% 15% 7%;
+        }
+
+        /* Title Image */
+        .title-image {
+            width: 60%;
+            transform: rotate(25deg);
+            position: absolute;
+            right: 30%;
+        }
+
+        /* Features Section */
+        #features {
+            position: relative;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+        }
+
+        .feature-box {
+            padding: 4.5%;
+        }
+
+        .icon {
+            color: rgb(78, 201, 212);
+            margin-bottom: 1rem;
+        }
+
+        .icon:hover {
+            color: rgba(0, 118, 220);
+        }
+
+        /* Testimonial Section */
+        #testimonials {
+            background-color: rgb(78, 201, 212);
+        }
+
+        .testimonial-text {
+            font-size: 3rem;
+            line-height: 1.5;
+        }
+
+        .testimonial-image {
+            width: 10%;
+            border-radius: 100%;
+            margin: 20px;
+        }
+
+        #press {
+            background-color: rgb(78, 201, 212);
+            padding-bottom: 3%;
+        }
+
+        .press-logo {
+            width: 15%;
+            margin: 20px 20px 50px;
+        }
+
+        /* Pricing Section */
+        #pricing {
+            padding: 100px;
+        }
+
+        .price-text {
+            font-size: 3rem;
+            line-height: 1.5;
+        }
+
+        .pricing-column {
+            padding: 3% 2%;
+        }
+
+        /* Footer Section */
+        .social-icon {
+            margin: 20px 10px;
+        }
+
+        @media (max-width: 1028px) {
+            #title {
+                text-align: center;
+            }
+
+            .title-image {
+                position: static;
+                transform: rotate(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="colored-section" id="title">
+        <div class="container-fluid">
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="">Gym Management System</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cta">Download</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Title -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="big-heading">Manage your Gym in any Place</h1>
+                    <a href="https://www.mediafire.com/file/z5rgb6rna90dtl1/GYM.rar/file" target="_blank">
+                        <button type="button" class="btn btn-outline-light btn-lg download-button">
+                            <em class="fas fa-desktop"></em> Download
+                        </button>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <img class="title-image" src="images/gynm.png" alt="gym-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="white-section" id="features">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="feature-box col-lg-4">
+                    <em class="icon fas fa-check-circle fa-4x"></em>
+                    <h3 class="feature-title">Easy to use.</h3>
+                    <p>So easy to use, You can use it in any place.</p>
+                </div>
+                <div class="feature-box col-lg-4">
+                    <em class="icon fas fa-bullseye fa-4x"></em>
+                    <h3 class="feature-title">Elite Clientele</h3>
+                    <p>You can control the gym system from anywhere at any time.</p>
+                </div>
+                <div class="feature-box col-lg-4">
+                    <em class="icon fas fa-certificate fa-4x"></em>
+                    <h3 class="feature-title">Guaranteed to work.</h3>
+                    <p>Know all the inputs and outputs of the gym at any time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="colored-section" id="testimonials">
+        <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active container-fluid">
+                    <h2 class="testimonial-text">I no longer have to review the gym data daily — I can see everything from my place.</h2>
+                    <img class="testimonial-image" src="images/istockphoto-1126791018-170667a.jpg" alt="profile1">
+                    <em>Mostafa Tarek, Egypt</em>
+                </div>
+                <div class="carousel-item container-fluid">
+                    <h2 class="testimonial-text">My husband used to make many calls to check the gym system, but now he reviews all the details easily.</h2>
+                    <img class="testimonial-image" src="images/download.png" alt="profile2">
+                    <em>Laila, Palestine</em>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="white-section" id="pricing">
+        <h2 class="section-heading">A Plan for Every Gym Management System Need</h2>
+        <p>Simple and affordable price plans for you and your system.</p>
+        <div class="row">
+            <div class="pricing-column col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Test System</h3>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="price-text">Free</h2>
+                        <p>Test system for 30 days</p>
+                        <p>Add up to 10 members per day</p>
+                        <p>Limited usage</p>
+                        <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-column col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Monthly System</h3>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="price-text">$60 / mo</h2>
+                        <p>Full system access</p>
+                        <p>Add 30 members per day</p>
+                        <p>Unlimited usage</p>
+                        <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-column col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Full Paid System</h3>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="price-text">$500</h2>
+                        <p>Lifetime access</p>
+                        <p>Unlimited members</p>
+                        <p>Unlimited usage</p>
+                        <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="colored-section" id="cta">
+        <div class="container-fluid">
+            <h3 class="big-heading">Manage your Gym from anywhere with full control.</h3>
+            <a href="https://www.mediafire.com/file/z5rgb6rna90dtl1/GYM.rar/file" target="_blank">
+                <button class="download-button btn btn-lg btn-dark" type="button">
+                    <em class="fas fa-desktop"></em> Download
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="white-section" id="footer">
+        <div class="container-fluid">
+            <a href="https://www.facebook.com" target="_blank"><em class="social-icon fab fa-facebook-f"></em></a>
+            <a href="https://twitter.com" target="_blank"><em class="social-icon fab fa-twitter"></em></a>
+            <a href="https://wa.me" target="_blank"><em class="social-icon fab fa-whatsapp"></em></a>
+            <a href="https://www.instagram.com" target="_blank"><em class="social-icon fab fa-instagram"></em></a>
+            <p>© 2021 Gym Management System</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
