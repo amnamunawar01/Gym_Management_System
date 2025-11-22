@@ -43,8 +43,9 @@ public void date(){
             JOptionPane.showMessageDialog(null,e);
         }
         date();
+        
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -92,7 +93,7 @@ public void date(){
         jLabel16.setForeground(new java.awt.Color(0, 118, 220));
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8-new-member-on-a-group-messenger-added-recently-60.png"))); // NOI18N
         jLabel16.setText("New Employee");
-        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 37, -1, -1));
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 50, -1, -1));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8-close-25.png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -100,60 +101,65 @@ public void date(){
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 37, 40, 40));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 40, 40));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 255, 204));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Employee ID");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 155, 110, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 110, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(250, 0, 0));
         jLabel2.setText("0000");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 80, 40));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 80, 40));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 255, 204));
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Name");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 190, 69, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, 69, -1));
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(0, 118, 220));
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 220, 350, -1));
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 350, -1));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 255, 204));
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Mobile Number");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 259, -1, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, -1, -1));
 
         jTextField2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField2.setForeground(new java.awt.Color(0, 118, 220));
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 289, 350, -1));
+        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 350, -1));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 255, 204));
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Email");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 330, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, -1, -1));
 
         jTextField3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField3.setForeground(new java.awt.Color(0, 118, 220));
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 360, 350, -1));
+        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 350, -1));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 255, 204));
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Gender");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 401, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, -1, -1));
 
-        jComboBox1.setBackground(new java.awt.Color(113, 223, 231));
+        jComboBox1.setBackground(new java.awt.Color(204, 204, 204));
         jComboBox1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jComboBox1.setForeground(new java.awt.Color(0, 118, 220));
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Male", "Female" }));
-        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 431, 350, -1));
+        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 430, 350, -1));
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 255, 204));
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Age");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, -1, -1));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 470, -1, -1));
 
         jTextField5.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         jTextField5.setForeground(new java.awt.Color(0, 118, 220));
@@ -162,18 +168,18 @@ public void date(){
                 jTextField5ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 498, 350, -1));
+        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 490, 350, -1));
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(0, 118, 220));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8-reset-24 (2).png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8-reset-24 (3).png"))); // NOI18N
         jButton2.setText("Reset");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 560, 110, -1));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 570, 110, -1));
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(0, 118, 220));
@@ -184,27 +190,27 @@ public void date(){
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 500, 350, -1));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 510, 350, -1));
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(0, 255, 204));
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Salary");
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 335, -1, -1));
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 340, -1, -1));
 
         jTextField9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField9.setForeground(new java.awt.Color(0, 118, 220));
-        jPanel1.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 430, 350, -1));
+        jPanel1.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 440, 350, -1));
 
         jTextField4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField4.setForeground(new java.awt.Color(0, 118, 220));
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 573, 350, -1));
+        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 560, 350, -1));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 255, 204));
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Address");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 538, -1, -1));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 530, -1, -1));
 
-        jComboBox4.setBackground(new java.awt.Color(113, 223, 231));
+        jComboBox4.setBackground(new java.awt.Color(204, 204, 204));
         jComboBox4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jComboBox4.setForeground(new java.awt.Color(0, 118, 220));
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Type Of Work", "Reseption", "Captain", "Cleaner" }));
@@ -213,44 +219,46 @@ public void date(){
                 jComboBox4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 294, 350, -1));
+        jPanel1.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 300, 350, -1));
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(0, 255, 204));
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("Type Of Work");
-        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 264, -1, -1));
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 270, -1, -1));
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(0, 255, 204));
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("Medical comments");
-        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 401, -1, -1));
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 410, -1, -1));
 
         jTextField10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField10.setForeground(new java.awt.Color(0, 118, 220));
-        jPanel1.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 360, 350, -1));
+        jPanel1.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 370, 350, -1));
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(250, 0, 1));
         jLabel14.setText("DD-MM-YYYY");
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, 130, 40));
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 220, 130, 40));
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(0, 255, 204));
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Start Day");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 210, -1, -1));
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, -1, -1));
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AdobeStock_239063806_Preview (1).jpg"))); // NOI18N
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 750));
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/newemp.jpg"))); // NOI18N
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 940, 680));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -291,15 +299,15 @@ public void date(){
             Statement stm=con.createStatement();
             String sql="insert into employee (id,name,mobilenumber,email,gender,age,address,startday,typeofwork,salary,medical)Values('"+id+"','"+name+"','"+mobilenumber+"','"+email+"','"+gender+"','"+age+"','"+address+"','"+startday+"','"+typeofwork+"','"+salary+"','"+medicalcomments+"')";
             //ResultSet rs=stm.executeQuery(sql);
-            if(jTextField1.getText().length()<=0||jTextField2.getText().length()<=0||jTextField3.getText().length()<=0||jTextField5.getText().length()<=0||jTextField4.getText().length()<=0||jComboBox4.getSelectedIndex()==0||jTextField9.getText().length()<=0||jTextField10.getText().length()<=0)
-            JOptionPane.showMessageDialog(null,"Complete Entering the Information");
-            else{
-                stm.executeUpdate(sql);
-                JOptionPane.showMessageDialog(null,"saved");
-                dispose();
-                setVisible(false);
-                new NewEmp().setVisible(true);
-            }
+            if(jTextField1.getText().trim().isEmpty() || jTextField2.getText().trim().isEmpty() || 
+   jTextField3.getText().trim().isEmpty() || jTextField5.getText().trim().isEmpty() || 
+   jTextField4.getText().trim().isEmpty() || jComboBox4.getSelectedIndex() == 0 || 
+   jTextField9.getText().trim().isEmpty() || jTextField10.getText().trim().isEmpty()) {
+    JOptionPane.showMessageDialog(null, "Complete Entering the Information");
+} else {
+    // Execute PreparedStatement here
+}
+
         }
 
         catch(SQLException e){
@@ -316,6 +324,10 @@ public void date(){
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments

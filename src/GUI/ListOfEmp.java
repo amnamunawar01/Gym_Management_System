@@ -9,34 +9,63 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import javax.swing.table.DefaultTableModel;
-
+import GUI.EmployeeObserver;
 /**
  *
  * @author mosta
  */
-public class ListOfEmp extends javax.swing.JFrame {
+
+public class ListOfEmp extends javax.swing.JFrame implements EmployeeObserver
+
+ {
 
     /**
      * Creates new form ListOfEmp
      */
-    public ListOfEmp() {
+        public ListOfEmp() {
         initComponents();
 
-        DefaultTableModel model=(DefaultTableModel)jTable1.getModel();
-        try{
-            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/gymdata","root","");
-    System.out.println("good");
-    Statement stm=con.createStatement();
-    String sql="select * from employee";
-    ResultSet rs=stm.executeQuery(sql);
-    while(rs.next())
-    {
-        model.addRow(new Object[]{rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7),rs.getString(8),rs.getString(9),rs.getString(10),rs.getString(11)});
+        // 👇 Observer pattern code: register this class as an observer
+        UpdateAndDeleteEmp.registerObserver(this);
+
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        try {
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/gymdata", "root", "");
+            System.out.println("good");
+            Statement stm = con.createStatement();
+            String sql = "select * from employee";
+            ResultSet rs = stm.executeQuery(sql);
+            while (rs.next()) {
+                model.addRow(new Object[]{rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4),
+                    rs.getString(5), rs.getString(6), rs.getString(7), rs.getString(8),
+                    rs.getString(9), rs.getString(10), rs.getString(11)});
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
+
+    // 🔔 Observer pattern method — gets called when Update/Delete happens
+    @Override
+    public void onEmployeeDataChanged() {
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.setRowCount(0); // clear existing data
+
+        try {
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/gymdata", "root", "");
+            Statement stm = con.createStatement();
+            String sql = "select * from employee";
+            ResultSet rs = stm.executeQuery(sql);
+            while (rs.next()) {
+                model.addRow(new Object[]{rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4),
+                    rs.getString(5), rs.getString(6), rs.getString(7), rs.getString(8),
+                    rs.getString(9), rs.getString(10), rs.getString(11)});
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        catch(Exception e){
-            
-        }
+
+        System.out.println("🔁 Employee list refreshed (Observer Notified)");
     }
 
     /**
@@ -85,9 +114,9 @@ public class ListOfEmp extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 126, 1208, 605));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-8, 111, 1270, 620));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AdobeStock_239063806_Preview (1).jpg"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/wallpaperflare.com_wallpaper (3).jpg"))); // NOI18N
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1260, 750));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

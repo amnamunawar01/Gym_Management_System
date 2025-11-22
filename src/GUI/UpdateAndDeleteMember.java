@@ -69,14 +69,14 @@ public class UpdateAndDeleteMember extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(250, 250, 250));
+        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel16.setFont(new java.awt.Font("Algerian", 1, 48)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(0, 118, 220));
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/update & delete member.png"))); // NOI18N
         jLabel16.setText("Update & Delete Member");
-        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, 710, -1));
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, 740, 70));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8-close-25.png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -84,39 +84,40 @@ public class UpdateAndDeleteMember extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 40, 40));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 40, 40));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 255, 204));
         jLabel1.setText("Member ID");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 193, 87, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 87, -1));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 255, 204));
         jLabel5.setText("Name");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 231, 69, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 69, -1));
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(0, 118, 220));
         jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 261, 350, -1));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 255, 204));
         jLabel6.setText("Mobile Number");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 302, -1, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
 
         jTextField2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField2.setForeground(new java.awt.Color(0, 118, 220));
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 332, 350, -1));
+        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 350, -1));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 255, 204));
         jLabel7.setText("Email");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 373, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 50, 20));
 
         jTextField3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField3.setForeground(new java.awt.Color(0, 118, 220));
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 402, 350, -1));
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, 350, -1));
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(0, 118, 220));
@@ -127,7 +128,7 @@ public class UpdateAndDeleteMember extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 630, 360, 30));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 610, 180, 30));
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(0, 118, 220));
@@ -138,25 +139,23 @@ public class UpdateAndDeleteMember extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 590, 360, 30));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 570, 370, 30));
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(0, 255, 204));
         jLabel15.setText("Payment");
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 373, -1, -1));
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 380, -1, -1));
 
         jTextField8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField8.setForeground(new java.awt.Color(0, 118, 220));
-        jPanel1.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 261, 350, -1));
+        jPanel1.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 280, 370, -1));
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(0, 255, 204));
         jLabel13.setText("Start Day");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 231, -1, -1));
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 250, -1, -1));
 
         jTextField10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField10.setForeground(new java.awt.Color(0, 118, 220));
-        jPanel1.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 190, 105, -1));
+        jPanel1.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 105, -1));
 
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton4.setForeground(new java.awt.Color(0, 118, 220));
@@ -167,7 +166,7 @@ public class UpdateAndDeleteMember extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(259, 190, -1, 23));
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, -1, 23));
 
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton5.setForeground(new java.awt.Color(0, 118, 220));
@@ -178,61 +177,60 @@ public class UpdateAndDeleteMember extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 670, 120, 30));
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 610, 180, 30));
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(0, 255, 204));
         jLabel17.setText("Day Of Birth");
-        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 517, -1, -1));
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 510, -1, -1));
 
         jTextField12.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         jTextField12.setForeground(new java.awt.Color(0, 118, 220));
-        jPanel1.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 551, 350, -1));
+        jPanel1.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 350, -1));
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(0, 255, 204));
         jLabel18.setText("Address");
-        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 587, -1, -1));
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 580, -1, -1));
 
         jTextField13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField13.setForeground(new java.awt.Color(0, 118, 220));
-        jPanel1.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 632, 350, -1));
+        jTextField13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField13ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 600, 350, -1));
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(0, 255, 204));
         jLabel19.setText("Extra Package");
-        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 302, -1, -1));
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 320, -1, -1));
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(0, 255, 204));
         jLabel20.setText("Medical comments");
-        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 443, -1, -1));
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 440, -1, -1));
 
         jTextField9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField9.setForeground(new java.awt.Color(0, 118, 220));
-        jPanel1.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 473, 350, -1));
+        jPanel1.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 470, 370, -1));
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 255, 204));
         jLabel11.setText("How you Know us");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 514, -1, 23));
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 500, -1, 23));
 
         jTextField11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField11.setForeground(new java.awt.Color(0, 118, 220));
-        jPanel1.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 550, 350, -1));
+        jPanel1.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 530, 370, -1));
 
         jTextField14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField14.setForeground(new java.awt.Color(0, 118, 220));
-        jPanel1.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 397, 350, -1));
+        jPanel1.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 410, 370, -1));
 
         jTextField15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField15.setForeground(new java.awt.Color(0, 118, 220));
-        jPanel1.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 332, 350, -1));
+        jPanel1.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 340, 370, -1));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 255, 204));
         jLabel8.setText("Gender");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 443, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, -1, -1));
 
         jTextField16.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         jTextField16.setForeground(new java.awt.Color(0, 118, 220));
@@ -241,22 +239,20 @@ public class UpdateAndDeleteMember extends javax.swing.JFrame {
                 jTextField16ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 474, 350, -1));
+        jPanel1.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, 350, -1));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AdobeStock_239063806_Preview (1).jpg"))); // NOI18N
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 750));
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AdobeStock_239063806_Preview (1) (1).jpg"))); // NOI18N
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(-50, -420, 1010, 580));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 962, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -276,8 +272,14 @@ public class UpdateAndDeleteMember extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         int checkid=0;
-        String id=jTextField10.getText();
         
+        String id = jTextField10.getText().trim();
+
+    // ---------------- INPUT VALIDATION -----------------
+    if (id.equals("")) {
+        JOptionPane.showMessageDialog(this, "Please enter the Member ID to search!");
+        return;  // stop execution
+    }
 
         try{
             
@@ -315,20 +317,39 @@ public class UpdateAndDeleteMember extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+// ---------------- INPUT VALIDATION -----------------
+    if(jTextField1.getText().trim().equals("") ||
+       jTextField2.getText().trim().equals("") ||
+       jTextField3.getText().trim().equals("") ||
+       jTextField16.getText().trim().equals("") ||
+       jTextField12.getText().trim().equals("") ||
+       jTextField13.getText().trim().equals("") ||
+       jTextField8.getText().trim().equals("") ||
+       jTextField15.getText().trim().equals("") ||
+       jTextField14.getText().trim().equals("") ||
+       jTextField9.getText().trim().equals("") ||
+       jTextField11.getText().trim().equals("")) {
+
+        JOptionPane.showMessageDialog(this, "Please fill in all fields before updating!");
+        return; // stop execution
+    }
+    // -----------------------------------------------------
+
+    String id = jTextField10.getText();
+    String name = jTextField1.getText();
+    String mobilenumber = jTextField2.getText();
+    String email = jTextField3.getText();
+    String gender = jTextField16.getText();
+    String dayofbirth = jTextField12.getText();
+    String address = jTextField13.getText();
+    String startday = jTextField8.getText();
+    String extrapackage = jTextField15.getText();
+    String payment = jTextField14.getText();
+    String medicalcomments = jTextField9.getText();
+    String howyouknowus = jTextField11.getText();
 
         
-        String id=jTextField10.getText();
-        String name=jTextField1.getText();
-        String mobilenumber=jTextField2.getText();
-        String email=jTextField3.getText();
-        String gender=jTextField16.getText();
-        String dayofbirth=jTextField12.getText();
-        String address=jTextField13.getText();
-        String startday=jTextField8.getText();
-        String extrapackage=jTextField15.getText();
-        String payment=jTextField14.getText();
-        String medicalcomments=jTextField9.getText();
-        String howyouknowus=jTextField11.getText();
+        
         try{
         //String driver="com.mysql.cj.jdbc.Driver";
         //Class.forName(driver);
@@ -356,11 +377,20 @@ JOptionPane.showMessageDialog(null,e);
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        
+         String id = jTextField10.getText().trim();
+
+    // ---------------- INPUT VALIDATION -----------------
+    if (id.equals("")) {
+        JOptionPane.showMessageDialog(this, "Please enter the Member ID to delete!");
+        return;  // stop execution
+    }
+    // -----------------------------------------------------
+
+   
         int Deletebutton=JOptionPane.showConfirmDialog(null,"Delete this member ?","Select",JOptionPane.YES_NO_OPTION);
         
         if(Deletebutton==0){
-            String id=jTextField10.getText();
+            
             try{
                 
     Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/gymdata","root","");
@@ -385,6 +415,14 @@ JOptionPane.showMessageDialog(null,e);
     private void jTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField16ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField16ActionPerformed
+
+    private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField13ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

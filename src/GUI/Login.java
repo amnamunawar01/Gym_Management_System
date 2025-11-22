@@ -44,7 +44,7 @@ public class Login extends javax.swing.JFrame {
                 jCheckBox1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 440, 20, 30));
+        getContentPane().add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 320, 20, 30));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(84, 140, 255));
@@ -55,7 +55,7 @@ public class Login extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 510, 270, 40));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 400, 270, 40));
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(84, 140, 255));
@@ -73,7 +73,7 @@ public class Login extends javax.swing.JFrame {
                 jTextField1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 380, 269, 31));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 260, 269, 31));
 
         jPasswordField1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jPasswordField1.setForeground(new java.awt.Color(84, 140, 255));
@@ -86,7 +86,12 @@ public class Login extends javax.swing.JFrame {
                 jPasswordField1FocusLost(evt);
             }
         });
-        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 440, 269, 32));
+        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPasswordField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 320, 269, 32));
 
         jButton2.setForeground(new java.awt.Color(255, 0, 0));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/close dumpel red.png"))); // NOI18N
@@ -95,36 +100,36 @@ public class Login extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 120, 37, 43));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 37, 43));
 
         jLabel3.setFont(new java.awt.Font("Bell MT", 1, 48)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(84, 140, 255));
         jLabel3.setText("Please Login First");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 250, 440, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, 440, -1));
 
         jLabel4.setFont(new java.awt.Font("Leelawadee", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(84, 140, 255));
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/close.png"))); // NOI18N
         jLabel4.setText("Incorrect Name or Password");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 330, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 370, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Forte", 1, 60)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Book Antiqua", 1, 60)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(84, 140, 255));
-        jLabel5.setText("Core GYM");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 20, -1, -1));
+        jLabel5.setText("FIT GYM");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 10, 350, 90));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/barbell_dumbbell_strength_workout_weight_gym_weightlifting_equipment_bodybuilding_fitness_lifting_strong_sport_exercise_training_flat_design_icon-512.png"))); // NOI18N
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 30, -1, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 30, -1, -1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/barbell_dumbbell_strength_workout_weight_gym_weightlifting_equipment_bodybuilding_fitness_lifting_strong_sport_exercise_training_flat_design_icon-512.png"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 30, -1, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 30, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 0, 0));
         jLabel8.setText("Close");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 160, -1, -1));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, -1, -1));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AdobeStock_239063806_Preview (1).jpg"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/login.jpg"))); // NOI18N
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 930, 630));
 
         pack();
@@ -132,13 +137,25 @@ public class Login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
+      // ---------------- INPUT VALIDATION -----------------
+    String name = jTextField1.getText().trim();
+    String password = jPasswordField1.getText().trim();
+
+    if (name.equals("") || name.equals("Enter Name")) {
+        JOptionPane.showMessageDialog(this, "Please enter your name!");
+        return; // stop execution
+    }
+
+    if (password.equals("") || password.equals("Enter Password")) {
+        JOptionPane.showMessageDialog(this, "Please enter your password!");
+        return; // stop execution
+    }
         try{
         //String driver="com.mysql.cj.jdbc.Driver";
         //Class.forName(driver);
     Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/gymdata","root","");
     System.out.println("good");
-    String name=jTextField1.getText();
-    String password=jPasswordField1.getText();
+
     Statement stm=con.createStatement();
     String sql="select * from employee where name='"+name+"' and id='"+password+"'";
     ResultSet rs=stm.executeQuery(sql);
@@ -158,8 +175,6 @@ public class Login extends javax.swing.JFrame {
 //    e.printStackTrace();
     }
         {
-            String name=jTextField1.getText();
-            String password=jPasswordField1.getText();
         if( "Admin".equals(name)&&"admin".equals(password)){
             dispose();
             Basic basic=new Basic();
@@ -170,19 +185,6 @@ public class Login extends javax.swing.JFrame {
         }
         }
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-
-        if(jCheckBox1.isSelected())
-        {
-            jPasswordField1.setEchoChar((char)0);
-        }
-        else
-        {
-            jPasswordField1.setEchoChar('*');
-        }
-        
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
 
     private void jTextField1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField1FocusGained
 
@@ -236,6 +238,23 @@ public class Login extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
 
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+
+        if(jCheckBox1.isSelected())
+        {
+            jPasswordField1.setEchoChar((char)0);
+        }
+        else
+        {
+            jPasswordField1.setEchoChar('*');
+        }
+
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
+
+    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPasswordField1ActionPerformed
 
 
     public static void main(String args[]) {
